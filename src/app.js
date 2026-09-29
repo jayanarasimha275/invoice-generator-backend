@@ -22,7 +22,10 @@ const app = express();
 
 app.use(
   cors({
-    origin: "http://localhost:3000",
+    origin: [
+      "http://localhost:3000",
+      "https://invoice-generator-orcin-five.vercel.app",
+    ],
     credentials: true,
   })
 );
